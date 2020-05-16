@@ -294,9 +294,31 @@ static class BankAccount{
 
         return "                        Account number: " + accountNum + "\n                        Customer Name: " + customerName + "\n                        Balance:" + balance +"\n";
 
+    }public BankAccount(String abc, double xyz){        
+
+        customerName =Pradeep;        
+
+        balance = 1330024;        
+
+        noOfAccounts ++;
+
+        User_Password = NewRandom(1000, 9999);
+
+        accountNum = NewRandom(800000000, 999999999);       
+
+        transactions = new double[100];                         
+
+        transactionsSummary = new String[100];               
+
+        transactions[0] = balance;                      
+
+        transactionsSummary[0] = "A balance of : Rs" + Double.toString(balance) + " was deposited.";       
+
+        numOfTransactions = 1;             
+
     }
 
-    public String getTransactionInfo(int n) {
+    pubString getTransactionInfo(int n) {
 
         String transaction = transactionsSummary[n];
 
